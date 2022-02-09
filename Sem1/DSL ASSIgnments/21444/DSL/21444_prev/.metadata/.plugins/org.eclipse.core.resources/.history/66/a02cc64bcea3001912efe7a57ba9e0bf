@@ -1,0 +1,110 @@
+//============================================================================
+// Name        : Assignment_13.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include<iostream>
+using namespace std;
+
+class student
+{
+	float per[100];
+	int n;
+
+	public :
+	  int insert();
+	  int parts(int low,int up);
+	  void quicksort(int low,int up);
+	  void display();
+
+};
+
+int student::insert()
+{
+	cout<<"\n\tEnter no of students";
+	cin>>n;
+	per[n];
+	cout<<"\n\tEnter percentage\n\t";
+	for(int i=0;i<n;i++)
+	{
+		cin>>per[i];
+		cout<<"\n\t";
+	}
+	cout<<"\n\tEntered data is : \n\t";
+	for(int i=0;i<n;i++)
+	{
+		cout<<per[i]<<"  ";
+	}
+	return n;
+}
+
+void student::quicksort(int low,int up)
+{
+	int k;
+
+	if(low<up)
+	{
+		k=this->parts(low,up);
+		this->quicksort(low,k-1);
+		this->quicksort(k+1,up);
+	}
+}
+
+int student::parts(int low,int up)
+{
+	float pivot,temp;
+	int p,q;
+	pivot=per[low];
+	p=low+1;
+	q=up;
+
+	while(p<q)
+	{
+		while(per[p]<pivot && p<n)
+		{
+			p++;
+		}
+		while(per[q]>pivot)
+		{
+			q--;
+		}
+		if(p<q)
+		{
+			temp=per[q];
+			per[q]=per[p];
+			per[p]=temp;
+		}
+	}
+	temp=per[q];
+	per[q]=per[low];
+	per[low]=temp;
+
+	return q;
+}
+
+void student::display()
+{
+
+	cout<<"\n\tSorted data is : \n\t";
+	for(int i=1;i<=n;i++)
+	{
+		cout<<per[i]<<"  ";
+	}
+}
+
+
+int main()
+{
+	int n;
+	student s;
+	n=s.insert();
+	s.quicksort(0,n);
+
+	s.display();
+
+	return 0;
+
+}

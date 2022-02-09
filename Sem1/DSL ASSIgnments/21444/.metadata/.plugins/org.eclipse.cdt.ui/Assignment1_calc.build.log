@@ -1,0 +1,15 @@
+16:52:39 **** Incremental Build of configuration Debug for project Assignment1_calc ****
+make all 
+Building file: ../src/Assignment_1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment_1.d" -MT"src/Assignment_1.d" -o "src/Assignment_1.o" "../src/Assignment_1.cpp"
+Finished building: ../src/Assignment_1.cpp
+ 
+Building target: Assignment1_calc
+Invoking: GCC C++ Linker
+g++  -o "Assignment1_calc"  ./src/Assignment_1.o   
+Finished building target: Assignment1_calc
+ 
+
+16:52:39 Build Finished (took 112ms)
+

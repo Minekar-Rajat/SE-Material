@@ -1,0 +1,18 @@
+18:31:06 **** Incremental Build of configuration Debug for project Assignment_11_a ****
+make all 
+Building file: ../src/Assignment_11_a.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment_11_a.d" -MT"src/Assignment_11_a.d" -o "src/Assignment_11_a.o" "../src/Assignment_11_a.cpp"
+../src/Assignment_11_a.cpp:16:8: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int n=0;
+        ^
+Finished building: ../src/Assignment_11_a.cpp
+ 
+Building target: Assignment_11_a
+Invoking: GCC C++ Linker
+g++  -o "Assignment_11_a"  ./src/Assignment_11_a.o   
+Finished building target: Assignment_11_a
+ 
+
+18:31:06 Build Finished (took 269ms)
+

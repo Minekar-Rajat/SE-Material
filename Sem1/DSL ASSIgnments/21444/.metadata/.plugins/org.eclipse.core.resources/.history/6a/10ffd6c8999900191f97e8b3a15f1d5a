@@ -1,0 +1,229 @@
+//============================================================================
+// Name        : Assignment_2_opoverloading.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+class complex
+{
+	int real,img;
+
+public :
+
+	complex()
+		{
+			real=0;
+			img=0;
+		}
+
+	complex(int r,int i)
+	{
+		real=r;
+		img=i;
+	}
+
+	complex operator+(complex &obj)
+	{
+		complex temp;
+		temp.real=this->real+obj.real;
+		temp.img=this->img+obj.img;
+
+		return temp;
+
+	}
+	complex operator-(complex &obj)
+		{
+			complex temp;
+			temp.real=this->real-obj.real;
+			temp.img=this->img-obj.img;
+
+			return temp;
+
+		}
+
+	complex operator*(complex &obj)
+	{
+		complex temp;
+		temp.real=(this->real*obj.real)-(this->img*obj.img);
+		temp.img=(this->img*obj.real)+(this->real*obj.img);
+		return temp;
+
+	}
+	complex operator/(complex &obj)
+		{
+			complex temp;
+			int var;
+			var=(obj.real*obj.real)+(obj.img*obj.img);
+			temp.real=((this->real*obj.real)+(this->img*obj.img))/var;
+			temp.img=((this->img*obj.real)-(this->real*obj.img))/var;
+			return temp;
+
+		}
+
+	void operator++(int x)
+		{
+		  this->real++;
+		  this->img++;
+
+		}
+	void operator++()
+			{
+			  ++real;
+			  ++img;
+
+			}
+
+
+
+
+	void operator<<(complex &obj)
+	{
+		cout<<"\n";
+		if(obj.img<0)
+		{
+			cout<<"\n\tComplex no is : "<<obj.real<<obj.img<<"i";
+
+		}
+		if(this->img>=0)
+		{
+			cout<<"\n\tComplex no is : "<<obj.real<<"+"<<obj.img<<"i";
+		}
+
+	}
+
+	void operator>>(complex &obj)
+	{
+		int r,i;
+		cout<<"\n\tEnter the real part\t";
+		cin>>r;
+		cout<<"\n\tEnter the imaginary part\t";
+		cin>>i;
+		obj.real=r;
+		obj.img=i;
+	}
+
+
+
+};
+
+
+
+int main()
+{
+	complex out,in;
+	complex c1,c2,ans;
+	int ch,cnt=0;;
+	char var;
+
+		do
+		{
+			cout<<"\n\t  Enter two complex numbers\n\t";
+			in>>c1;
+			cout<<"\n\t";
+			in>>c2;
+			cout<<"\n\tEnter the operation you want to perform";
+			cout<<"\n\n\t  1.Addition            ";
+			cout<<"\n\t  2.Subtraction           ";
+			cout<<"\n\t  3.Multiplication        ";
+			cout<<"\n\t  4.Division              ";
+			cout<<"\n\t  5.Display both          ";
+			cout<<"\n\t  6.Pre increment 1st no  ";
+			cout<<"\n\t  7.Pre increment 2nd no  ";
+			cout<<"\n\t  8.Post increment 1st no ";
+			cout<<"\n\t  9.Post increment 2nd no ";
+			cout<<"\n\n\t  Enter your choice     ";
+			cin>>ch;
+
+			switch(ch)
+			{
+
+			case 1:
+				        ans=c1+c2;
+				        cout<<"\n\t Addition is  : ";
+				        out<<ans;
+				        break;
+
+			case 2:
+						ans=c1-c2;
+						cout<<"\n\t Subtraction is  : ";
+						out<<ans;
+						break;
+
+			case 3:
+						ans=c1*c2;
+						cout<<"\n\t Multiplication is  : ";
+						out<<ans;
+						break;
+
+			case 4:
+						ans=c1/c2;
+						cout<<"\n\t Division is  : ";
+						out<<ans;
+						break;
+			case 5:
+				        cout<<"\n\n\t1st number is : ";
+				        out<<c1;
+				        cout<<"\n\n\t2nd number is : ";
+				        out<<c2;
+				        break;
+			case 6:
+
+				        ++c1;
+				        cout<<"\n\t pre incremented 1st no : ";
+				        out<<c1;
+				        break;
+
+			case 7:
+
+					    ++c2;
+					    cout<<"\n\t pre incremented 2nd no : ";
+				        out<<c2;
+				        break;
+
+			case 8:
+
+				        c1++;
+				        cout<<"\n\t post incremented 1st no : ";
+					    out<<c1;
+						break;
+		    case 9:
+
+					    ++c2;
+					    cout<<"\n\t post incremented 2nd no : ";
+					    out<<c2;
+					    break;
+
+
+
+
+			default :
+				        cout<<"\n\t Wrong input ";
+
+			}
+
+		cout<<"\n\t Do you want to continue ? 'y' or 'n' \n\t ";
+		cin>>var;
+		if(var=='y'||var=='Y')
+		{
+			cnt++;
+		}
+
+
+		}
+		while(cnt);
+
+
+		cout<<"\n\n\t";
+
+
+
+
+
+	return 0;
+}
+

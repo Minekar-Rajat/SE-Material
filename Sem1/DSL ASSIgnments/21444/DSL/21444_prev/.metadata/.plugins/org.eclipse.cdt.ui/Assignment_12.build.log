@@ -1,0 +1,19 @@
+16:16:36 **** Build of configuration Debug for project Assignment_12 ****
+make all 
+Building file: ../src/Assignment_12.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment_12.d" -MT"src/Assignment_12.d" -o "src/Assignment_12.o" "../src/Assignment_12.cpp"
+../src/Assignment_12.cpp: In member function ‘void student::insert()’:
+../src/Assignment_12.cpp:23:8: warning: statement has no effect [-Wunused-value]
+   num[n];
+        ^
+Finished building: ../src/Assignment_12.cpp
+ 
+Building target: Assignment_12
+Invoking: GCC C++ Linker
+g++  -o "Assignment_12"  ./src/Assignment_12.o   
+Finished building target: Assignment_12
+ 
+
+16:16:37 Build Finished (took 259ms)
+

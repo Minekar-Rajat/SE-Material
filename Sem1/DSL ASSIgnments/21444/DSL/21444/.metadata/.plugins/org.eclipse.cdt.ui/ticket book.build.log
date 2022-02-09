@@ -1,0 +1,19 @@
+19:45:17 **** Incremental Build of configuration Debug for project ticket book ****
+make all 
+Building file: ../src/ticket book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ticket book.d" -MT"src/ticket\ book.d" -o "src/ticket book.o" "../src/ticket book.cpp"
+../src/ticket book.cpp: In function ‘int main()’:
+../src/ticket book.cpp:157:17: warning: unused variable ‘no’ [-Wunused-variable]
+Finished building: ../src/ticket book.cpp
+  int row,col,ch,no;
+                 ^
+ 
+Building target: ticket book
+Invoking: GCC C++ Linker
+g++  -o "ticket book"  ./src/ticket\ book.o   
+Finished building target: ticket book
+ 
+
+19:45:17 Build Finished (took 262ms)
+

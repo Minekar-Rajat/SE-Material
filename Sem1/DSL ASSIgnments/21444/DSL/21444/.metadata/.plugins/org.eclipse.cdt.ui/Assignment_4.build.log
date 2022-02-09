@@ -1,0 +1,19 @@
+15:37:32 **** Incremental Build of configuration Debug for project Assignment_4 ****
+make all 
+Building file: ../src/Assignment_4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment_4.d" -MT"src/Assignment_4.d" -o "src/Assignment_4.o" "../src/Assignment_4.cpp"
+../src/Assignment_4.cpp: In member function ‘void student::insert()’:
+../src/Assignment_4.cpp:23:8: warning: statement has no effect [-Wunused-value]
+   num[n];
+        ^
+Finished building: ../src/Assignment_4.cpp
+ 
+Building target: Assignment_4
+Invoking: GCC C++ Linker
+g++  -o "Assignment_4"  ./src/Assignment_4.o   
+Finished building target: Assignment_4
+ 
+
+15:37:32 Build Finished (took 264ms)
+

@@ -1,0 +1,10 @@
+
+DOS BOX Commands:
+
+1. MOUNT     C:      DriveName:/Path
+
+2. TASM             NameOfFile.asm
+
+3. TLINK           NameOfObjectFile.OBJ
+
+4. NameOfExecutable.EXE

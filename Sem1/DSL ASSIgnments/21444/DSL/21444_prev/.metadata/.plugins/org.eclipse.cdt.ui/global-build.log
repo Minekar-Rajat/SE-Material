@@ -1,0 +1,173 @@
+19:07:56 **** Incremental Build of configuration Debug for project Assignment_8stack ****
+make all 
+Building file: ../src/Assignment_8stack.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment_8stack.d" -MT"src/Assignment_8stack.d" -o "src/Assignment_8stack.o" "../src/Assignment_8stack.cpp"
+../src/Assignment_8stack.cpp: In function ‘int main()’:
+../src/Assignment_8stack.cpp:17:3: error: ‘stack’ was not declared in this scope
+   stack<char>a;
+   ^
+../src/Assignment_8stack.cpp:17:9: error: expected primary-expression before ‘char’
+   stack<char>a;
+         ^
+../src/Assignment_8stack.cpp:17:9: error: expected ‘;’ before ‘char’
+../src/Assignment_8stack.cpp:22:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<s.length();i++)
+                          ^
+../src/Assignment_8stack.cpp:26:5: error: ‘a’ was not declared in this scope
+     a.push(s[i]);
+     ^
+../src/Assignment_8stack.cpp:29:8: error: ‘a’ was not declared in this scope
+    if(!a.empty())
+        ^
+make: *** [src/Assignment_8stack.o] Error 1
+19:08:00 **** Incremental Build of configuration Debug for project Assignment_8stack ****
+make all 
+Building file: ../src/Assignment_8stack.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment_8stack.d" -MT"src/Assignment_8stack.d" -o "src/Assignment_8stack.o" "../src/Assignment_8stack.cpp"
+../src/Assignment_8stack.cpp: In function ‘int main()’:
+../src/Assignment_8stack.cpp:23:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<s.length();i++)
+                          ^
+../src/Assignment_8stack.cpp:28:5: error: ‘flag’ was not declared in this scope
+     flag=1;
+     ^
+../src/Assignment_8stack.cpp:33:9: error: name lookup of ‘i’ changed for ISO ‘for’ scoping [-fpermissive]
+    if(s[i]=='}')
+         ^
+../src/Assignment_8stack.cpp:33:9: note: (if you use ‘-fpermissive’ G++ will accept your code)
+../src/Assignment_8stack.cpp:41:6: error: break statement not within loop or switch
+      break;
+      ^
+../src/Assignment_8stack.cpp:53:6: error: break statement not within loop or switch
+      break;
+      ^
+../src/Assignment_8stack.cpp:65:6: error: break statement not within loop or switch
+      break;
+      ^
+make: *** [src/Assignment_8stack.o] Error 1
+19:11:59 **** Incremental Build of configuration Debug for project Assignment_8stack ****
+make all 
+Building file: ../src/Assignment_8stack.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment_8stack.d" -MT"src/Assignment_8stack.d" -o "src/Assignment_8stack.o" "../src/Assignment_8stack.cpp"
+../src/Assignment_8stack.cpp: In function ‘int main()’:
+../src/Assignment_8stack.cpp:23:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../src/Assignment_8stack.cpp
+   for(i=0;i<s.length();i++)
+                      ^
+ 
+Building target: Assignment_8stack
+Invoking: GCC C++ Linker
+g++  -o "Assignment_8stack"  ./src/Assignment_8stack.o   
+Finished building target: Assignment_8stack
+ 
+19:15:40 **** Incremental Build of configuration Debug for project Assignment_8stack ****
+make all 
+Building file: ../src/Assignment_8stack.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment_8stack.d" -MT"src/Assignment_8stack.d" -o "src/Assignment_8stack.o" "../src/Assignment_8stack.cpp"
+../src/Assignment_8stack.cpp: In function ‘int main()’:
+../src/Assignment_8stack.cpp:23:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(i=0;i<s.length();i++)
+                      ^
+Finished building: ../src/Assignment_8stack.cpp
+ 
+Building target: Assignment_8stack
+Invoking: GCC C++ Linker
+g++  -o "Assignment_8stack"  ./src/Assignment_8stack.o   
+Finished building target: Assignment_8stack
+ 
+19:17:30 **** Incremental Build of configuration Debug for project Assignment_8stack ****
+make all 
+Building file: ../src/Assignment_8stack.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment_8stack.d" -MT"src/Assignment_8stack.d" -o "src/Assignment_8stack.o" "../src/Assignment_8stack.cpp"
+../src/Assignment_8stack.cpp: In function ‘int main()’:
+../src/Assignment_8stack.cpp:23:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../src/Assignment_8stack.cpp
+   for(i=0;i<s.length();i++)
+                      ^
+ 
+Building target: Assignment_8stack
+Invoking: GCC C++ Linker
+g++  -o "Assignment_8stack"  ./src/Assignment_8stack.o   
+Finished building target: Assignment_8stack
+ 
+19:17:55 **** Incremental Build of configuration Debug for project Assignment_8stack ****
+make all 
+Building file: ../src/Assignment_8stack.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment_8stack.d" -MT"src/Assignment_8stack.d" -o "src/Assignment_8stack.o" "../src/Assignment_8stack.cpp"
+../src/Assignment_8stack.cpp: In function ‘int main()’:
+../src/Assignment_8stack.cpp:23:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(i=0;i<s.length();i++)
+                      ^
+Finished building: ../src/Assignment_8stack.cpp
+ 
+Building target: Assignment_8stack
+Invoking: GCC C++ Linker
+g++  -o "Assignment_8stack"  ./src/Assignment_8stack.o   
+Finished building target: Assignment_8stack
+ 
+19:18:26 **** Incremental Build of configuration Debug for project Assignment_8stack ****
+make all 
+Building file: ../src/Assignment_8stack.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment_8stack.d" -MT"src/Assignment_8stack.d" -o "src/Assignment_8stack.o" "../src/Assignment_8stack.cpp"
+../src/Assignment_8stack.cpp: In function ‘int main()’:
+../src/Assignment_8stack.cpp:23:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(i=0;i<s.length();i++)
+                      ^
+Finished building: ../src/Assignment_8stack.cpp
+ 
+Building target: Assignment_8stack
+Invoking: GCC C++ Linker
+g++  -o "Assignment_8stack"  ./src/Assignment_8stack.o   
+Finished building target: Assignment_8stack
+ 
+19:19:12 **** Incremental Build of configuration Debug for project Assignment_8stack ****
+make all 
+Building file: ../src/Assignment_8stack.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment_8stack.d" -MT"src/Assignment_8stack.d" -o "src/Assignment_8stack.o" "../src/Assignment_8stack.cpp"
+../src/Assignment_8stack.cpp: In function ‘int main()’:
+../src/Assignment_8stack.cpp:23:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(i=0;i<s.length();i++)
+Finished building: ../src/Assignment_8stack.cpp
+                      ^
+ 
+Building target: Assignment_8stack
+Invoking: GCC C++ Linker
+g++  -o "Assignment_8stack"  ./src/Assignment_8stack.o   
+Finished building target: Assignment_8stack
+ 
+19:19:33 **** Incremental Build of configuration Debug for project Assignment_8stack ****
+make all 
+make: Nothing to be done for `all'.
+19:20:01 **** Incremental Build of configuration Debug for project Assignment_8stack ****
+make all 
+make: Nothing to be done for `all'.
+19:20:25 **** Incremental Build of configuration Debug for project Assignment_8stack ****
+make all 
+make: Nothing to be done for `all'.
+19:22:36 **** Incremental Build of configuration Debug for project Assignment_8stack ****
+make all 
+Building file: ../src/Assignment_8stack.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment_8stack.d" -MT"src/Assignment_8stack.d" -o "src/Assignment_8stack.o" "../src/Assignment_8stack.cpp"
+../src/Assignment_8stack.cpp: In function ‘int main()’:
+../src/Assignment_8stack.cpp:23:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(i=0;i<s.length();i++)
+                      ^
+Finished building: ../src/Assignment_8stack.cpp
+ 
+Building target: Assignment_8stack
+Invoking: GCC C++ Linker
+g++  -o "Assignment_8stack"  ./src/Assignment_8stack.o   
+Finished building target: Assignment_8stack
+ 
+19:23:02 **** Incremental Build of configuration Debug for project Assignment_8stack ****
+make all 
+make: Nothing to be done for `all'.

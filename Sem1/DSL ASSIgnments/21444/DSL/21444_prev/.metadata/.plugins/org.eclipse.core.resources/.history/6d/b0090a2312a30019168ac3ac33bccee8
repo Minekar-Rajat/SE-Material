@@ -1,0 +1,190 @@
+//============================================================================
+// Name        : Assignment_3.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+class matrix
+{
+	int row,column;
+    int m[10][10];
+public:
+
+
+
+	matrix insert()
+	{
+		matrix temp;
+		cout<<"\n\tEnter size of matrix \n";
+		cin>>temp.row>>temp.column;
+
+		cout<<"\n\tEnter the elements \n";
+		for(int i=0;i<temp.row;i++)
+		{
+		   for(int j=0;j<temp.column;j++)
+		   {
+		      cout<<"\n\t";
+		      cin>>temp.m[i][j];
+
+	       }
+		}
+		cout<<"\n\n\t";
+		for(int i=0;i<temp.row;i++)
+		{
+			for(int j=0;j<temp.column;j++)
+			{
+				cout<<temp.m[i][j]<<"\t";
+			}
+			cout<<"\n\t";
+		}
+
+		return temp;
+
+	}
+
+	void sparse()
+	{
+		int count=0,n=0;
+		for(int i=0;i<row;i++)
+		{
+			for(int j;j<column;j++)
+			{
+				n++;
+				if(m[i][j]==0)
+				{
+					count++;
+				}
+
+
+			}
+		}
+		int cmp;
+		cmp=n/2;
+		if(count>cmp)
+		{
+			cout<<"\n\tGiven matrix is sparse matrix";
+		}
+		else
+		{
+			cout<<"\n\tGiven matrix is not sparse matrix";
+		}
+
+	}
+
+	void transpose()
+	{
+			matrix temp;
+
+			for(int i=0;i<row;i++)
+			{
+				for(int j=0;j<column;j++)
+				{
+					temp.m[i][j]=m[j][i];
+
+				}
+			}
+			cout<<"\n\tTranspose matrix is : \n\n\t";
+			for(int i=0;i<row;i++)
+			{
+				for(int j=0;j<column;j++)
+				{
+					cout<<temp.m[i][j]<<"\t";
+				}
+				cout<<"\n\t";
+			}
+
+    }
+
+	void add(matrix &obj)
+	{
+
+		if(row==obj.row && column==obj.column)
+		{
+			matrix temp;
+			for(int i=0;i<row;i++)
+			{
+				for(int j=0;j<column;j++)
+				{
+					temp.m[i][j]=(m[i][j])+(obj.m[i][j]);
+				}
+			}
+
+			cout<<"\n\n\t";
+			for(int i=0;i<row;i++)
+			{
+				for(int j=0;j<column;j++)
+				{
+					cout<<temp.m[i][j]<<"\t";
+				}
+				cout<<"\n\t";
+			}
+
+
+		}
+		else
+		{
+			cout<<"\n\tAddition can't be performed";
+		}
+
+	}
+
+
+
+
+
+
+};
+
+
+int main()
+{
+	int ch;
+
+	matrix m1,m2;
+	m1.insert();
+
+	do
+	{
+		      cout<<"\n\n\t 0.exit             ";
+			  cout<<"\n\t 1.transpose          ";
+			  cout<<"\n\t 2.Sparse             ";
+			  cout<<"\n\t 3.Addition           ";
+			  cout<<"\n\n\t Enter your choice  ";
+			  cin>>ch;
+
+			  switch(ch)
+			 {
+
+			  case 1 :
+			 		   cout<<"\n\tTranspose :    ";
+			 		   m1.transpose();
+			 		   break;
+
+			  case 2 :
+			 		    cout<<"\n\tSparse : ";
+			 		    m1.sparse();
+			 		    break;
+
+			  case 3 :
+				        cout<<"\n\tEnter two matrices :";
+			 			m1.insert();
+			 			m2.insert();
+			 			m1.add(m2);
+			 		    break;
+			 }
+
+
+
+	}while(ch!=0);
+
+
+
+
+
+	return 0;
+}

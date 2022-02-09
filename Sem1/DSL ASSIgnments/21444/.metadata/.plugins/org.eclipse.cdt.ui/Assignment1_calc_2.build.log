@@ -1,0 +1,10 @@
+15:43:05 **** Build of configuration Debug for project Assignment1_calc_2 ****
+make all 
+Building target: Assignment1_calc_2
+Invoking: GCC C++ Linker
+g++  -o "Assignment1_calc_2"  ./src/practice.o   
+Finished building target: Assignment1_calc_2
+ 
+
+15:43:05 Build Finished (took 124ms)
+

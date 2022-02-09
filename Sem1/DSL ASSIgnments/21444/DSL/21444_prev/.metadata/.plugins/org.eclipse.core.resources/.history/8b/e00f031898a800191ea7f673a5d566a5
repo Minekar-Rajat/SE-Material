@@ -1,0 +1,75 @@
+//============================================================================
+// Name        : Assignment_8stack.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include<string.h>
+using namespace std;
+
+
+int main()
+{
+
+		stack<char>a;
+		string s;
+		cout<<"\n\n\tEnter String \n\t";
+		cin>>s;
+		int flag=0;
+		for(int i=0;i<s.length();i++)
+		{
+			if(s[i]=='{' || s[i]=='[' || s[i]=='(')
+			{
+				a.push(s[i]);
+				flag=1;
+			}
+			if(!a.empty())
+			{
+				if(s[i]=='}')
+				{
+					if(a.top()=='{')
+					{
+						a.pop();
+					}
+					else
+					{
+						break;
+					}
+				}
+				else if(s[i]==']')
+				{
+					if(a.top()=='{')
+					{
+						a.pop();
+
+					}
+					else
+					{
+						break;
+					}
+				}
+				else if(s[i]==')')
+				{
+					if(a.top()=='{')
+					{
+						a.pop();
+
+					}
+					else
+					{
+						break;
+					}
+				}
+
+			}
+		}
+
+
+
+
+
+	return 0;
+}

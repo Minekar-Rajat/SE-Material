@@ -1,0 +1,168 @@
+16:03:49 **** Incremental Build of configuration Debug for project Ass4pinacle_club ****
+make all 
+make: Nothing to be done for `all'.
+16:03:55 **** Incremental Build of configuration Debug for project Ass4pinacle_club ****
+make all 
+Building file: ../src/Ass4pinacle_club.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ass4pinacle_club.d" -MT"src/Ass4pinacle_club.d" -o "src/Ass4pinacle_club.o" "../src/Ass4pinacle_club.cpp"
+../src/Ass4pinacle_club.cpp:293:27: warning: backslash and newline separated by space [enabled by default]
+     \n\t 4.New Secretary  \ 
+ ^
+Finished building: ../src/Ass4pinacle_club.cpp
+ 
+Building target: Ass4pinacle_club
+Invoking: GCC C++ Linker
+g++  -o "Ass4pinacle_club"  ./src/Ass4pinacle_club.o   
+Finished building target: Ass4pinacle_club
+ 
+16:04:18 **** Incremental Build of configuration Debug for project Ass4pinacle_club ****
+make all 
+Building file: ../src/Ass4pinacle_club.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ass4pinacle_club.d" -MT"src/Ass4pinacle_club.d" -o "src/Ass4pinacle_club.o" "../src/Ass4pinacle_club.cpp"
+../src/Ass4pinacle_club.cpp:293:27: warning: backslash and newline separated by space [enabled by default]
+     \n\t 4.New Secretary  \ 
+ ^
+Finished building: ../src/Ass4pinacle_club.cpp
+ 
+Building target: Ass4pinacle_club
+Invoking: GCC C++ Linker
+g++  -o "Ass4pinacle_club"  ./src/Ass4pinacle_club.o   
+Finished building target: Ass4pinacle_club
+ 
+16:05:23 **** Incremental Build of configuration Debug for project Ass4pinacle_club ****
+make all 
+Building file: ../src/Ass4pinacle_club.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ass4pinacle_club.d" -MT"src/Ass4pinacle_club.d" -o "src/Ass4pinacle_club.o" "../src/Ass4pinacle_club.cpp"
+../src/Ass4pinacle_club.cpp:294:27: warning: backslash and newline separated by space [enabled by default]
+     \n\t 4.New Secretary  \ 
+ ^
+Finished building: ../src/Ass4pinacle_club.cpp
+ 
+Building target: Ass4pinacle_club
+Invoking: GCC C++ Linker
+g++  -o "Ass4pinacle_club"  ./src/Ass4pinacle_club.o   
+Finished building target: Ass4pinacle_club
+ 
+16:23:20 **** Incremental Build of configuration Debug for project Ass4pinacle_club ****
+make all 
+make: Nothing to be done for `all'.
+16:23:55 **** Incremental Build of configuration Debug for project Ass4pinacle_club ****
+make all 
+make: Nothing to be done for `all'.
+16:25:35 **** Incremental Build of configuration Debug for project Assignment_13 ****
+make all 
+Building file: ../src/Assignment_13.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment_13.d" -MT"src/Assignment_13.d" -o "src/Assignment_13.o" "../src/Assignment_13.cpp"
+Finished building: ../src/Assignment_13.cpp
+ 
+Building target: Assignment_13
+Invoking: GCC C++ Linker
+g++  -o "Assignment_13"  ./src/Assignment_13.o   
+Finished building target: Assignment_13
+ 
+16:25:49 **** Incremental Build of configuration Debug for project Assignment_13 ****
+make all 
+make: Nothing to be done for `all'.
+16:26:08 **** Incremental Build of configuration Debug for project Assignment_13 ****
+make all 
+make: Nothing to be done for `all'.
+16:26:55 **** Incremental Build of configuration Debug for project Assignment_13 ****
+make all 
+Building file: ../src/Assignment_13.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment_13.d" -MT"src/Assignment_13.d" -o "src/Assignment_13.o" "../src/Assignment_13.cpp"
+Finished building: ../src/Assignment_13.cpp
+ 
+Building target: Assignment_13
+Invoking: GCC C++ Linker
+g++  -o "Assignment_13"  ./src/Assignment_13.o   
+Finished building target: Assignment_13
+ 
+16:27:45 **** Incremental Build of configuration Debug for project Ass4pinacle_club ****
+make all 
+Building file: ../src/Ass4pinacle_club.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ass4pinacle_club.d" -MT"src/Ass4pinacle_club.d" -o "src/Ass4pinacle_club.o" "../src/Ass4pinacle_club.cpp"
+../src/Ass4pinacle_club.cpp:294:27: warning: backslash and newline separated by space [enabled by default]
+     \n\t 4.New Secretary  \ 
+Finished building: ../src/Ass4pinacle_club.cpp
+ ^
+ 
+Building target: Ass4pinacle_club
+Invoking: GCC C++ Linker
+g++  -o "Ass4pinacle_club"  ./src/Ass4pinacle_club.o   
+Finished building target: Ass4pinacle_club
+ 
+16:49:38 **** Incremental Build of configuration Debug for project Ass4pinacle_club ****
+make all 
+Building file: ../src/Ass4pinacle_club.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ass4pinacle_club.d" -MT"src/Ass4pinacle_club.d" -o "src/Ass4pinacle_club.o" "../src/Ass4pinacle_club.cpp"
+../src/Ass4pinacle_club.cpp:302:27: warning: backslash and newline separated by space [enabled by default]
+     \n\t 4.New Secretary  \ 
+ ^
+Finished building: ../src/Ass4pinacle_club.cpp
+ 
+Building target: Ass4pinacle_club
+Invoking: GCC C++ Linker
+g++  -o "Ass4pinacle_club"  ./src/Ass4pinacle_club.o   
+Finished building target: Ass4pinacle_club
+ 
+16:52:31 **** Incremental Build of configuration Debug for project Ass4pinacle_club ****
+make all 
+Building file: ../src/Ass4pinacle_club.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ass4pinacle_club.d" -MT"src/Ass4pinacle_club.d" -o "src/Ass4pinacle_club.o" "../src/Ass4pinacle_club.cpp"
+../src/Ass4pinacle_club.cpp:302:27: warning: backslash and newline separated by space [enabled by default]
+     \n\t 4.New Secretary  \ 
+ ^
+Finished building: ../src/Ass4pinacle_club.cpp
+ 
+Building target: Ass4pinacle_club
+Invoking: GCC C++ Linker
+g++  -o "Ass4pinacle_club"  ./src/Ass4pinacle_club.o   
+Finished building target: Ass4pinacle_club
+ 
+17:08:23 **** Incremental Build of configuration Debug for project Ass4pinacle_club ****
+make all 
+Building file: ../src/Ass4pinacle_club.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ass4pinacle_club.d" -MT"src/Ass4pinacle_club.d" -o "src/Ass4pinacle_club.o" "../src/Ass4pinacle_club.cpp"
+../src/Ass4pinacle_club.cpp:306:31: warning: backslash and newline separated by space [enabled by default]
+     \n\t 4.New Secretary      \ 
+ ^
+../src/Ass4pinacle_club.cpp:39:8: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+Finished building: ../src/Ass4pinacle_club.cpp
+  int c=0;
+        ^
+ 
+Building target: Ass4pinacle_club
+Invoking: GCC C++ Linker
+g++  -o "Ass4pinacle_club"  ./src/Ass4pinacle_club.o   
+Finished building target: Ass4pinacle_club
+ 
+17:09:52 **** Incremental Build of configuration Debug for project Ass4pinacle_club ****
+make all 
+Building file: ../src/Ass4pinacle_club.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ass4pinacle_club.d" -MT"src/Ass4pinacle_club.d" -o "src/Ass4pinacle_club.o" "../src/Ass4pinacle_club.cpp"
+../src/Ass4pinacle_club.cpp:306:31: warning: backslash and newline separated by space [enabled by default]
+     \n\t 4.New Secretary      \ 
+ ^
+../src/Ass4pinacle_club.cpp:39:8: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int c=0;
+        ^
+Finished building: ../src/Ass4pinacle_club.cpp
+ 
+Building target: Ass4pinacle_club
+Invoking: GCC C++ Linker
+g++  -o "Ass4pinacle_club"  ./src/Ass4pinacle_club.o   
+Finished building target: Ass4pinacle_club
+ 
+17:10:00 **** Incremental Build of configuration Debug for project Ass4pinacle_club ****
+make all 
+make: Nothing to be done for `all'.

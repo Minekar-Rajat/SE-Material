@@ -1,0 +1,118 @@
+--------------------------------------------------------------------------------
+-- Company: 
+-- Engineer:
+--
+-- Create Date:   16:46:44 10/05/2019
+-- Design Name:   
+-- Module Name:   /home/del/21411/FA_structure/FA_structuretest.vhd
+-- Project Name:  FA_structure
+-- Target Device:  
+-- Tool versions:  
+-- Description:   
+-- 
+-- VHDL Test Bench Created by ISE for module: FA_structure
+-- 
+-- Dependencies:
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+--
+-- Notes: 
+-- This testbench has been automatically generated using types std_logic and
+-- std_logic_vector for the ports of the unit under test.  Xilinx recommends
+-- that these types always be used for the top-level I/O of a design in order
+-- to guarantee that the testbench will bind correctly to the post-implementation 
+-- simulation model.
+--------------------------------------------------------------------------------
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+ 
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--USE ieee.numeric_std.ALL;
+ 
+ENTITY FA_structuretest IS
+END FA_structuretest;
+ 
+ARCHITECTURE behavior OF FA_structuretest IS 
+ 
+    -- Component Declaration for the Unit Under Test (UUT)
+ 
+    COMPONENT FA_structure
+    PORT(
+         x : IN  std_logic;
+         y : IN  std_logic;
+         z : IN  std_logic;
+         sum : OUT  std_logic;
+         cout : OUT  std_logic
+        );
+    END COMPONENT;
+    
+
+   --Inputs
+   signal x : std_logic := '0';
+   signal y : std_logic := '0';
+   signal z : std_logic := '0';
+
+ 	--Outputs
+   signal sum : std_logic;
+   signal cout : std_logic;
+   -- No clocks detected in port list. Replace <clock> below with 
+   -- appropriate port name 
+ 
+  
+BEGIN
+ 
+	-- Instantiate the Unit Under Test (UUT)
+   uut: FA_structure PORT MAP (
+          x => x,
+          y => y,
+          z => z,
+          sum => sum,
+          cout => cout
+        );
+
+   -- Clock process definitions
+  
+ 
+
+   -- Stimulus process
+  process
+   begin
+x <= '0';
+y <= '0';
+z <= '0';
+wait for 5 ns;
+x <= '0';
+y <= '0';
+z <= '1';
+wait for 5 ns;
+x <= '0';
+y <= '1';
+z <= '0';
+wait for 5 ns;
+x <= '0';
+y <= '1';
+z <= '1';
+wait for 5 ns;
+x <= '1';
+y <= '0';
+z <= '0';
+wait for 5 ns;
+x <= '1';
+y <= '0';
+z <= '1';
+wait for 5 ns;
+x <= '1';
+y <= '1';
+z <= '0';
+wait for 5 ns;
+x <= '1';
+y <= '1';
+z <= '1';
+wait for 5 ns;
+
+   end process;
+
+END;

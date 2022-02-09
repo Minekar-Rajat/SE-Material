@@ -1,0 +1,161 @@
+//============================================================================
+// Name        : ticket.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include<string.h>
+using namespace std;
+
+
+class node
+{
+public :
+
+	node *next;
+	node *prev;
+	int seat;
+	node(int x)
+	{
+
+		next=NULL;
+		prev=NULL;
+		seat=0;
+
+
+	}
+
+
+};
+
+
+
+
+class DCLL
+{
+	node *head;
+	node *rear;
+public :
+
+	void create();
+	void show();
+	void booking(int );
+	DCLL()
+	{
+		head=NULL;
+		rear=NULL;
+	}
+
+
+
+};
+
+void DCLL::create()
+{
+
+	node *p;
+	head=new node(0);
+	rear=head->next=head->prev=head;
+	p=head;
+
+	for(int i=1;i<7;i++)
+	{
+		p->next=new node(0);
+		p->next->prev=p;
+		p=p->next;
+	}
+	rear=p;
+	rear->next=head;
+	head->prev=rear;
+
+
+}
+
+void DCLL::show()
+{
+
+
+	node *p;
+
+	p=head;
+
+	do
+	{
+		cout<<"\t"<<p->seat;
+		p=p->next;
+
+
+	}while(p!=head);
+	cout<<"\n\t";
+
+
+}
+
+
+void DCLL::booking(int col)
+{
+	node *p=head;
+
+	if(col<1 ||col>7)
+	{
+		cout<<"\n\tInvalid input";
+		return ;
+
+	}
+
+	else
+	{
+		for(int i=1;i<=col;i++)
+		{
+			p=p->next;
+		}
+		p->seat=1;
+	}
+}
+
+
+
+
+int main()
+{
+
+	int row,col;
+	DCLL ticket[10];
+
+   for(int i=0;i<10;i++)
+   {
+
+	   ticket[i].create();
+
+   }
+
+   cout<<"\n\n\tSeats Initially Not Booked  : \n\n\t";
+   for(int i=1;i<=7;i++)
+   {
+	   cout<<"\t"<<i;
+   }
+   cout<<"\n\n\t";
+   for(int i=0;i<10;i++)
+   {
+
+	 cout<<"Row "<<i+1;
+	 ticket[i].show();
+   }
+
+   cout<<"\n\n\tEnter Row and seat number\n\t";
+   cin>>row>>col;
+   ticket[row-1].booking(col);
+
+   cout<<"\n\n\t";
+   for(int i=0;i<10;i++)
+   {
+
+	  cout<<"Row "<<i+1;
+	  ticket[i].show();
+   }
+
+
+}

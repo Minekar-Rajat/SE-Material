@@ -1,0 +1,95 @@
+//============================================================================
+// Name        : Assignment_2_opoverloading.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+class complex
+{
+	int real,img;
+
+public :
+
+	complex()
+		{
+			real=0;
+			img=0;
+		}
+
+	complex(int r,int i)
+	{
+		real=r;
+		img=i;
+	}
+
+	complex operator+(complex obj)
+	{
+		complex temp;
+		temp.real=this->real+obj.real;
+		temp.img=this->img+obj.img;
+
+		return temp;
+
+	}
+	complex operator-(complex obj)
+		{
+			complex temp;
+			temp.real=this->real-obj.real;
+			temp.img=this->img-obj.img;
+
+			return temp;
+
+		}
+
+	complex operator*(complex obj)
+	{
+		complex temp;
+		temp.real=(this->real*obj.real)-(this->img*obj.img);
+		temp.img=(this->img*obj.real)+(this->real*obj.img);
+		return temp;
+
+	}
+
+
+
+	void operator<<(complex obj)
+	{
+		if(obj.img<0)
+		{
+			cout<<"\n\tComplex no is : "<<obj.real<<obj.img<<"i";
+
+		}
+		if(obj.img>0)
+		{
+			cout<<"\n\tComplex no is : "<<obj.real<<"+"<<obj.img<<"i";
+		}
+	}
+
+
+
+};
+
+
+
+int main()
+{
+	complex c1(5,3);
+	complex c2(8,10);
+	complex c3(0,0);
+	c3=c1+c2;
+	cout<<"\n\t";
+
+	cout<<c3;
+
+
+
+
+
+	return 0;
+}
+

@@ -1,0 +1,19 @@
+17:14:50 **** Incremental Build of configuration Debug for project practice ****
+make all 
+Building file: ../src/practice.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/practice.d" -MT"src/practice.d" -o "src/practice.o" "../src/practice.cpp"
+../src/practice.cpp: In function ‘int main()’:
+../src/practice.cpp:15:7: warning: unused variable ‘ch’ [-Wunused-variable]
+   int ch;
+       ^
+Finished building: ../src/practice.cpp
+ 
+Building target: practice
+Invoking: GCC C++ Linker
+g++  -o "practice"  ./src/practice.o   
+Finished building target: practice
+ 
+
+17:14:50 Build Finished (took 274ms)
+

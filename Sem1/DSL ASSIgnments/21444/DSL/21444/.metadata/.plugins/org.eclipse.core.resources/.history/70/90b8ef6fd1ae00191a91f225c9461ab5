@@ -1,0 +1,33 @@
+//============================================================================
+// Name        : Ass4pinacle_club.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include<string.h>
+using namespace std;
+
+class node
+{
+	int PRN;
+	char name[20];
+	node *next;
+public:
+	node(char *nm,int x)
+	{
+		PRN=x;
+		strcpy(name,nm);
+		next=NULL;
+
+	}
+};
+
+
+int main()
+{
+
+	return 0;
+}
